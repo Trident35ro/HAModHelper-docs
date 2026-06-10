@@ -6,15 +6,22 @@
         {
           "src": "src/HAModHelper.GamePlugin",
           "files": [
-            "**/*.csproj"
+            "HAModHelper.GamePlugin.csproj"
           ]
         }
       ],
-      "dest": "api"
+      "dest": "api",
+      "disableGitFeatures": false
     }
   ],
   "build": {
     "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
       {
         "files": [
           "**/*.{md,yml}"
