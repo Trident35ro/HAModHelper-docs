@@ -1,0 +1,55 @@
+name: Deploy DocFX Site to GitHub Pages
+
+on:
+  repository_dispatch:
+    types: [hamh_commit]
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout destination repository
+        uses: actions/checkout@v4
+
+      - name: Fetch source code from remote repository
+        run: |
+          rm -rf src
+          mkdir -p src
+          git clone https://github.com/eris-webserv/HAModHelper.git src
+
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Install DocFX
+        run: dotnet tool update -g docfx
+
+      - name: Build Website with DocFX
+        run: docfx build docfx.json
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
