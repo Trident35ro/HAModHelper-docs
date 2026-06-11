@@ -1,4 +1,6 @@
 - name: Introduction
   href: introduction.md
-- name: Getting Started
-  href: getting-started.md
+- name: Getting Started with Modding
+  href: getting-modding.md
+- name: Getting Started with Collaborating
+  href: getting-collaborating.md

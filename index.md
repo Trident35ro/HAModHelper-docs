@@ -8,7 +8,7 @@ Welcome to **HAModLoader Wiki**.
 This website will guide you how to enter the world of Hybrid Animals modding as a player, collaborator or a mod developer.
 
 <p align="center">
-  <img src="resources/haml_logo.png" alt="HAModLoader Logo"/>
+  <img src="resources/logo_fancy.png" alt="HAModLoader Logo"/>
 </p>
 
 > [!NOTE]
@@ -16,7 +16,7 @@ This website will guide you how to enter the world of Hybrid Animals modding as 
 > [!NOTE]
 > As of writing this everything is still in beta and there are bugs, undone features or features that are missing. If you encounter a bug please report it in the Discord server under the bug-reports channel.
 > [!IMPORTANT]
-> Regarding [this]() comment by TheFirstHybrid, modding the game is not approved by him and the company. Don't post any modding content or related content to the official Hybrid Animals subreddit, [r/HybridAnimalsGame](https://reddit.com/r/HybridAnimalsGame) as you risk yourself to get banned permantly.
+> Regarding [this](https://www.reddit.com/r/HybridAnimalsGame/comments/1rxa0pz/comment/ob5og7h/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) comment by TheFirstHybrid, modding the game is not approved by him and the company. Don't post any modding content or related content to the official Hybrid Animals subreddit, [r/HybridAnimalsGame](https://reddit.com/r/HybridAnimalsGame) as you risk yourself to getting banned permantly.
 
 # What is HAModLoader?
 
@@ -26,6 +26,24 @@ HAModLoader (or Hybrid Animals Mod Loader) is, well, a mod loader for the mobile
 unvails API that modders can use to make their mods (see [API](../api/HAModHelper.GamePlugin.Base.Events.html) section for more details)
 * [HAMultiplayer](https://github.com/eris-webserv/HAMP) (optional component) - Reimplementation of Hybrid Animals's server software for HAModHelper; used to host servers
 
+# Get started
+
+If you are a player and you want to play with mods or play multiplayer start [here](../docs/introduction.html).
+
+If you want to make mods start [here](../docs/getting-modding.html).
+
+If you want to contribute to the project start [here](../docs/getting-collaborating.html).
+
+# Abreviations
+
+In this documentation there will be a few abreviations used. Here is a list of all of them:
+
+1. HAML - HAModLoader/Hybrid Animals Mod Loader
+2. HAMH - HAModHelper/Hybrid Animals Mod Helper
+3. HAM/HAMP - HAMultiplayer/Hybrid Animals Multiplayer
+4. HA - Hybrid Animals
+6. TFH - TheFirstHybrid
+
 ---
 Thank you to these people for making this project a reality:
 ---
@@ -33,4 +51,14 @@ Thank you to these people for making this project a reality:
 * [Eris](https://github.com/eris-webserv) - The one who started the project
 * [Xtracube](https://github.com/xtracube) - Made FusionCore
 * [Segual](https://github.com/segually) - Reimplemented multiplayer into the game (though HAModHelper)
+* [TheVenturian]() - Made the logo and other assets used by the project
 * [Trident35ro](https://github.com/trident35ro) - Made the documentation you are reading right now
+
+---
+Links
+---
+* [Hybrid Animals Modding/HAModLoader Discord server](https://discord.gg/TYEhNVmXhw)
+* [HAModLoader Subreddit](https://reddit.com/r/HAModLoader)
+* [Hybrid Animals Community](https://discord.gg/S6sZC627AK)
+* [Hybrid Animals Official Wiki](https://hybridanimals.wiki.gg/wiki/Hybrid_Animals_Wiki)
+* [Abstract Software Page](https://www.abstractsoftwares.com/)
