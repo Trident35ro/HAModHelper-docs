@@ -34,7 +34,7 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "resources/**"
         ]
       }
     ],
@@ -46,6 +46,8 @@
     "globalMetadata": {
       "_appName": "HAModHelper Documentation",
       "_appTitle": "HAModHelper Documentation",
+      "_appLogoPath": "resources/logo.png",
+      "_appFaviconPath": "resources/logo.png",
       "_enableSearch": true,
       "pdf": false
     }
