@@ -14,7 +14,7 @@ As of speaking, HAML doesn't work on any Android emulator. Also you need exactly
 > Make sure to backup your original HA saves as those will be deleted with the uninstallation of HA.
 
 > [!NOTE]
-> To run HAML or FusionCore you need at least Android 11 for it to work. Also note that iOS isn't supported and never will be due to its nature and most Android 11 devices might also don't work even if it fits the version requirement.
+> To run HAML or FusionCore you need at least an Android 11 ARM64 device for it to work. Also note that iOS isn't supported and never will be due to its nature and most Android 11 devices might also don't work even if it fits the version and hardware requirements.
 
 To start up make sure you joined the [Hybrid Animals Modding](https://discord.gg/TYEhNVmXhw) Discord server. Now follow these steps:
 
@@ -49,7 +49,7 @@ Firstly this is how you do it with your computer:
 1. [To start off, enable Developer Options/Settings on your phone; it depends on the phone brands how to do it, but you mostly need to tap on the build number in the phone details or about phone page]*
 2. [After you enabled Developer Options/Settings scroll in it until you find USB Debugging and enable it]*
 3. [Download the Android SDK Platform Tools package from [here](https://developer.android.com/tools/releases/platform-tools)]* and run your terminal/Command Prompt inside the folder you got after you unarchived the archived files
-4. Connect your phone to your computer using an USB charger that supports transfering files; [you may need to approve using USB debugging on your computer on your phone if it is your first time doing this]*
+4. Connect your phone to your computer using an USB cable that supports transfering files; [you may need to approve using USB debugging on your computer on your phone if it is your first time doing this]*
 5. Open FusionCore/HAML then run this command in your terminal/Command Prompt window on your computer: ```adb logcat --pid=$(adb shell pidof -s dev.allofus.fusioncore) > HAMLlog.txt```; note that FusionCore must be running before executing the command
 6. Make your game crash and get the HAMLlog.txt file from the ADB folder
 7. That's all!
@@ -76,7 +76,7 @@ Backup/Restore your saves
 
 Making a copy of your saves also can be done only on your phone or with a computer. This involves in bypassing the Android phone limitations from accessing the ```Android/data``` folder where is your saves stored. Without futher ado let's start with the computer method.
 
-1. Get yourself a USB charger with file transfer capability and connect your phone to your computer
+1. Get yourself a USB cable with file transfer capability and connect your phone to your computer
 2. Allow on your phone to access your files on the computer
 3. Go inside the phone storage on your computer and after you got to the root of your storage go to ```Android/data/com.abtractsoft.hybridanimals/files``` and copy everything inside or what you want to back up to a safe place(but I suggest backing up the entire folder)
 4. That's it!
