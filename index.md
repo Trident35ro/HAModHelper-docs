@@ -8,7 +8,7 @@ Welcome to **HAModLoader Wiki**.
 This website will guide you how to enter the world of Hybrid Animals modding as a player, collaborator or a mod developer.
 
 <p align="center">
-  <img src="resources/logo_fancy.png" alt="HAModLoader Logo"/>
+  <img src="/resources/logo_fancy.png" alt="HAModLoader Logo"/>
 </p>
 
 > [!NOTE]
@@ -28,11 +28,11 @@ unvails API that modders can use to make their mods (see [API](../api/HAModHelpe
 
 # Get started
 
-If you are a player and you want to play with mods or play multiplayer start [here](../docs/introduction.html).
+If you are a player and you want to play with mods or play multiplayer start [here](/docs/introduction.html).
 
-If you want to make mods start [here](../docs/getting-modding.html).
+If you want to make mods start [here](/docs/getting-modding.html).
 
-If you want to contribute to the project start [here](../docs/getting-collaborating.html).
+If you want to contribute to the project start [here](/docs/getting-collaborating.html).
 
 # Abreviations
 
