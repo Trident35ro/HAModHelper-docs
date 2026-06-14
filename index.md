@@ -8,7 +8,7 @@ Welcome to **HAModLoader Wiki**.
 This website will guide you how to enter the world of Hybrid Animals modding as a player, collaborator or a mod developer.
 
 <p align="center">
-  <img src="/resources/logo_fancy.png" alt="HAModLoader Logo"/>
+  <img src="resources/logo_fancy.png" alt="HAModLoader Logo"/>
 </p>
 
 > [!NOTE]
