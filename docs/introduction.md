@@ -30,7 +30,7 @@ This video shows how to do the steps above (thank you Segual for the footage):
 
 <p align="center">
     <video width="340" controls>
-        <source src="/resources/installation.mp4" type="video/mp4">
+        <source src="resources/installation.mp4" type="video/mp4">
         Your browser does not support HTML video.
     </video>
 </p>
