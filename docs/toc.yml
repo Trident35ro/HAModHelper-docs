@@ -1,6 +1,17 @@
 - name: Introduction
   href: introduction.md
 - name: Getting Started with Modding
-  href: getting-modding.md
-- name: Getting Started with Collaborating
-  href: getting-collaborating.md
+  href: modding.md
+  items:
+    - name: Loading Assets
+      href: tutorials/loading-assets.md
+    - name: Creating Items
+      href: tutorials/creating-items.md
+    - name: Crafting Recipes
+      href: tutorials/crafting-recipes.md
+    - name: Adding Creatures
+      href: tutorials/adding-creatures.md
+    - name: Creating Perks
+      href: tutorials/creating-perks.md
+- name: Contributing & Collaborating
+  href: collaborating.md
