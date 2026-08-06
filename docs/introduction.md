@@ -1,8 +1,5 @@
 # Introduction
 
-> [!NOTE]
-> Steps or substeps enclosed in brackets `[...]` and marked with an asterisk `*` only need to be completed during the initial first-time setup.
-
 ## Installing HAML
 
 This guide walks you through setting up HAML so you can start playing with mods or multiplayer.
@@ -59,32 +56,42 @@ If the game crashes before the standard log file can write output, use the **And
 
 ### Option A: PC Method
 
-1. [*Enable **Developer Options** on your Android device (typically found by tapping **Build Number** 7 times in **Settings > About Phone**).*]
-2. [*In **Developer Options**, enable **USB Debugging**.*]
-3. [*Download and extract the [Android SDK Platform Tools](https://developer.android.com/tools/releases/platform-tools).*] Open a command terminal inside the extracted platform-tools directory.
-4. Connect your phone to your PC via a USB cable configured for file transfer. [*Approve the USB debugging prompt on your phone if requested.*]
-5. Open FusionCore/HAML on your phone, then execute the following command in your terminal:
+#### Initial Setup (Do Once)
+1. Enable **Developer Options** on your Android device (typically found by tapping **Build Number** 7 times in **Settings > About Phone**).
+2. In **Developer Options**, enable **USB Debugging**.
+3. Download and extract the [Android SDK Platform Tools](https://developer.android.com/tools/releases/platform-tools).
+4. Connect your phone to your PC via USB and approve the USB debugging prompt on your device.
+
+#### Capturing Logs
+1. Open a terminal inside the extracted `platform-tools` directory.
+2. Launch FusionCore/HAML on your phone.
+3. Run the following command in your PC terminal:
    ```bash
    adb logcat --pid=$(adb shell pidof -s dev.allofus.fusioncore) > HAMLlog.txt
    ```
-6. Reproduce the game crash. The full log will save to `HAMLlog.txt` inside your platform-tools folder.
+4. Reproduce the crash. The output will save to `HAMLlog.txt` inside your platform-tools folder.
+
+---
 
 ### Option B: Mobile-Only Method
 
-1. [*Install **Bugjaeger** from the Google Play Store.*]
-2. [*Open Bugjaeger, tap the plug icon in the top-right corner, and select **Pair**.*]
-3. [*Enable **Developer Options** in your Android settings.*]
-4. Enable **Wireless Debugging** inside Developer Options (requires an active Wi-Fi connection).
-5. Tap **Wireless Debugging**, copy the displayed **IP Address & Port**.
-6. [*Return to Bugjaeger and paste the IP address and Port into their respective input fields.*]
-7. [*In Wireless Debugging, select **Pair device with pairing code**. Enter the generated code into the Bugjaeger notification prompt.*]
-8. [*Exit the pairing screen in Bugjaeger*], tap the plug icon again, enter your IP address and Port, and tap **Connect**.
-9. Tap the command tab (`<>`) at the bottom right and run:
+#### Initial Setup (Do Once)
+1. Install **Bugjaeger** from the Google Play Store.
+2. Enable **Developer Options** in your Android settings.
+3. Open Bugjaeger, tap the plug icon in the top-right corner, and tap **Pair**.
+4. In Android **Developer Options**, enable **Wireless Debugging** (requires active Wi-Fi).
+5. Tap **Wireless Debugging** > **Pair device with pairing code**. Enter the pairing code into Bugjaeger's notification prompt.
+6. Exit the pairing screen in Bugjaeger.
+
+#### Capturing Logs
+1. Open **Wireless Debugging** in Android settings, copy the **IP Address & Port**.
+2. In Bugjaeger, tap the plug icon, paste the IP Address & Port, and tap **Connect**.
+3. Open FusionCore/HAML on your phone.
+4. In Bugjaeger, tap the command tab (`<>`) at the bottom right and run:
    ```bash
    logcat --pid=$(pidof -s dev.allofus.fusioncore)
    ```
-   *Note: FusionCore must be actively running before executing this command.*
-10. Copy the terminal output and attach it to your bug report.
+5. Copy the terminal output and attach it to your bug report.
 
 > [!TIP]
 > **Wireless Debugging** may automatically disable itself when Wi-Fi disconnects. Re-enable it in Android settings if connections fail.
@@ -104,13 +111,22 @@ Saves are stored inside the protected `Android/data` directory. Use one of the m
    ```
 3. Copy the folder contents to a safe local location.
 
+---
+
 ### Option B: Mobile-Only Method (Shizuku)
 
+#### Initial Setup (Do Once)
 1. Download and install **Shizuku**.
-2. [*Open Shizuku and follow the in-app pairing guide to start the Shizuku service.*]
+2. Open Shizuku and follow the in-app pairing guide to start the Shizuku service.
 3. Install a supported file manager (e.g., **ZArchiver** or **File Manager +**).
-4. Authorize the file manager to use Shizuku inside Shizuku's **Authorized Applications** menu.
-5. Navigate to `Android/data/com.abstractsoft.hybridanimals/files` and copy your save files to another local folder.
+4. Authorize your file manager inside Shizuku's **Authorized Applications** menu.
+
+#### Backing Up Saves
+1. Open your authorized file manager.
+2. Navigate to `Android/data/com.abstractsoft.hybridanimals/files`.
+3. Copy your save files to a safe directory on your internal storage.
+
+---
 
 ### Restoring Saves
 To restore data, copy your backed-up files back into `Android/data/com.abstractsoft.hybridanimals/files`. 
