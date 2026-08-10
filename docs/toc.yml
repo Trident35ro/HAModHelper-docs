@@ -13,5 +13,7 @@
       href: tutorials/adding-creatures.md
     - name: Creating Perks
       href: tutorials/creating-perks.md
+    - name: Using the Event Bus
+      href: tutorials/event-bus.md
 - name: Contributing & Collaborating
   href: collaborating.md

@@ -27,7 +27,8 @@ Check out these guides to learn how to add custom content to the game:
 * [Loading Custom Assets](tutorials/loading-assets.md) — Import custom textures, models, and Unity AssetBundles.
 * [Creating Custom Items](tutorials/creating-items.md) — Define item stats, icons, and register new items.
 * [Injecting Crafting Recipes](tutorials/crafting-recipes.md) — Add custom recipes to crafting stations.
-* [Adding New Entities & Creatures](tutorials/adding-entities.md) — Spawn custom creatures and world prefabs.
+* [Adding New Entities & Creatures](tutorials/adding-creatures.md) — Spawn custom creatures and world prefabs.
+* [Using the Event Bus](tutorials/event-bus.md) — Listen for and fire custom mod events.
 * [Creating Perks & Abilities](tutorials/creating-perks.md) — Register custom active/passive perks.
 
 ---
